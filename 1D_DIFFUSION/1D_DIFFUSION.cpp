@@ -8,7 +8,7 @@ int main()
 {
 
 // DECLARATION OF VARIABLES
-int i, j, NX = 21, NT = 100;
+int i, j, NX = 101, NT = 4000;
 double XLEFT, XRIGHT, ULEFT, URIGHT, DX, DT, TINI, TEND, VIS;
 double X[NX], U[NX], UN[NX];
 
@@ -25,11 +25,11 @@ for(i=0; i<NX; i++)
 
 // TIME PARAMS
 TINI = 0.0;
-DT = 0.01;
+DT = 0.00001;
 TEND = TINI + NT * DT;
 
 // PROBLEM PARAMS
-VIS = 0.1;		// VISCOSITY = -0.1, FOR EXPLOSION
+VIS = 4.0;		// VISCOSITY = -0.1, FOR EXPLOSION
 
 // BOUNDARY CONDITIONS
 ULEFT = 1.0;

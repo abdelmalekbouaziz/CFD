@@ -4,7 +4,7 @@ PROGRAM DIFFUSION_1D
 
         !DECLARATIONS OF VARIABLES
         INTEGER :: i, j
-        INTEGER, PARAMETER :: NX = 21, NT = 100, WP = 4
+        INTEGER, PARAMETER :: NX = 101, NT = 4000, WP = 4
         REAL :: DX, DT, XLEFT, XRIGHT, TINI, TEND, ULEFT, URIGHT, VIS
         REAL :: X(NX), U(NX), UN(NX)
 
@@ -20,11 +20,11 @@ PROGRAM DIFFUSION_1D
 
         !TIME PARAMS
         TINI = 0.0
-        DT = 0.01
+        DT = 0.00001
         TEND = TINI + DT * NT
 
         !PROBLEM PARAMS
-        VIS = 0.1       !VISCOSITY = -0.1, FOR EXPLOSION
+        VIS = 4.0       !VISCOSITY = -0.1, FOR EXPLOSION
 
         !BOUNDARY CONDITIONS
         ULEFT = 1.0
