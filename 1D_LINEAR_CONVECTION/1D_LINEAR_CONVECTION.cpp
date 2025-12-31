@@ -11,7 +11,7 @@ int main()
     double x[Nx], u[Nx], un[Nx]; 
 
     // Initialization
-    c = 1.0;
+    c = 1.0;  // c < 1.0 for artificial viscosity effects ~ 0.5
     XLeft = 0.0;
     XRight = 2.0;
     ULeft = 1.0;

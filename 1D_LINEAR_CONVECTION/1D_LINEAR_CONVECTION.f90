@@ -8,7 +8,7 @@ PROGRAM LINEAR_CONVECTION_1D
         REAL :: x(Nx), un(Nx), u(Nx)
 
         !INITIALIZATIONS
-        c = 1.0
+        c = 1.0       ! c < 1.0 for artificial viscosity effects ~ 0.5
         dt = 0.01
         TINI = 0.0
         XLEFT = 0.0

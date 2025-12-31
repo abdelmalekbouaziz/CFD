@@ -24,7 +24,7 @@ PROGRAM DIFFUSION_1D
         TEND = TINI + DT * NT
 
         !PROBLEM PARAMS
-        VIS = 0.1
+        VIS = 0.1       !VISCOSITY = -0.1, FOR EXPLOSION
 
         !BOUNDARY CONDITIONS
         ULEFT = 1.0
