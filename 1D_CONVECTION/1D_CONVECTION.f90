@@ -3,12 +3,12 @@ PROGRAM CONVECTION_1D
 
         !DECLARATIONS
         INTEGER :: i, j
-        INTEGER, PARAMETER :: Nx = 21, Nt = 51, WP = 4
+        INTEGER, PARAMETER :: Nx = 401, Nt = 360, WP = 4
         REAL :: dt, dx, TINI, TEND, XLEFT, XRIGHT, ULEFT, URIGHT
         REAL :: x(Nx), un(Nx), u(Nx)
 
         !INITIALIZATIONS
-        dt = 0.01
+        dt = 0.002
         TINI = 0.0
         XLEFT = 0.0
         XRIGHT = 2.0

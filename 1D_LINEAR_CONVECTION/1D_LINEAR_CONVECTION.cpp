@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     // Declaration
-    int Nx = 21, Nt = 51, i, j;
+    int Nx = 201, Nt = 51*2, i, j;
     double c, dx, dt, XLeft, XRight, Tini, Tend, ULeft, URight;
     double x[Nx], u[Nx], un[Nx]; 
 

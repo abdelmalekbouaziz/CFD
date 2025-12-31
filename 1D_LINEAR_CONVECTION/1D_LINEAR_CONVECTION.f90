@@ -3,7 +3,7 @@ PROGRAM LINEAR_CONVECTION_1D
 
         !DECLARATIONS
         INTEGER :: i, j
-        INTEGER, PARAMETER :: Nx = 21, Nt = 51, WP = 4
+        INTEGER, PARAMETER :: Nx = 201, Nt = 51*2, WP = 4
         REAL :: c, dt, dx, TINI, TEND, XLEFT, XRIGHT, ULEFT, URIGHT
         REAL :: x(Nx), un(Nx), u(Nx)
 

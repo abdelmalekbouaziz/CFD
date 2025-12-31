@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     // Declaration
-    int Nx = 21, Nt = 51, i, j;
+    int Nx = 401, Nt = 360, i, j;
     double dx, dt, XLeft, XRight, Tini, Tend, ULeft, URight;
     double x[Nx], u[Nx], un[Nx]; 
 
@@ -17,7 +17,7 @@ int main()
     URight = 1.0;
     Tini = 0.0;
     dx = (XRight - XLeft)/(Nx - 1);
-    dt = 0.01;
+    dt = 0.002;
     Tend = dt * Nt;
 
     // Velocity Initialization
