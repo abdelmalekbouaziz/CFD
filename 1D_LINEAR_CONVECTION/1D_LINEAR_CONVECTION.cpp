@@ -45,13 +45,13 @@ int main()
     for(j = 1; j < Nt+1; j++)
     {	
 	u[0] = ULeft;
-        u[Nx-1] = URight;
+    u[Nx-1] = URight;
 	un[0] = ULeft;
 	un[Nx-1] =URight;
 
         for(i = 1; i < Nx-1; i++)
         {
-	    un[i] = u[i];		
+	        un[i] = u[i];		
             u[i] = un[i] - c * (dt/dx) * (un[i] - un[i-1]);
         }
     }
